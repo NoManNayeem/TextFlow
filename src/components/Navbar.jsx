@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import TextFlowLogo from '@/components/TextFlowLogo';
 import { usePathname } from 'next/navigation';
-import { Moon, Sun, Menu, X, Home, BookOpen, Info, Sparkles, User } from 'lucide-react';
+import { Moon, Sun, Menu, X, Home, BookOpen, Info, Sparkles, User, FileText, HelpCircle, GitCompare, History } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Tooltip,
@@ -31,6 +32,10 @@ export default function Navbar({ theme, setTheme }) {
     { name: 'Tutorial', href: '/tutorial', icon: BookOpen, description: 'Learn how to use' },
     { name: 'About', href: '/about', icon: Info, description: 'About TextFlow' },
     { name: 'Developer', href: '/developer', icon: User, description: 'About the developer' },
+    { name: 'Templates', href: '/templates', icon: FileText, description: 'Ready-to-use LinkedIn templates' },
+    { name: 'Compare', href: '/compare', icon: GitCompare, description: 'Why TextFlow vs others' },
+    { name: 'FAQ', href: '/faq', icon: HelpCircle, description: 'Frequently asked questions' },
+    { name: 'Updates', href: '/updates', icon: History, description: 'Changelog and roadmap' },
   ];
 
   const toggleTheme = () => {
@@ -49,12 +54,7 @@ export default function Navbar({ theme, setTheme }) {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group transition-all duration-300 hover:scale-105">
-            <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:from-blue-500 group-hover:to-indigo-500">
-              <Sparkles className="w-5 h-5 text-white group-hover:rotate-12 transition-transform duration-300" />
-            </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent group-hover:from-blue-500 group-hover:to-indigo-500 transition-all duration-300">
-              TextFlow
-            </span>
+            <TextFlowLogo variant={theme === 'dark' ? 'dark' : 'default'} />
           </Link>
 
           {/* Desktop Navigation */}
