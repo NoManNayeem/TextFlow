@@ -1,5 +1,7 @@
-'use client';
-
+export const metadata = {
+  title: 'Compare TextFlow | TextFlow vs Alternatives',
+  description: 'See how TextFlow compares to plain text, native editors, and paid tools. Free, privacy-first, unicode-safe.',
+};
 export default function ComparePage() {
   return (
     <div className="container mx-auto px-4 py-10">

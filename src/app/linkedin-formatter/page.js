@@ -1,5 +1,7 @@
-'use client';
-
+export const metadata = {
+  title: 'LinkedIn Text Formatter | TextFlow',
+  description: 'Bold, italic and unicode-safe styles for LinkedIn. Examples, limits, and best practices.',
+};
 export default function LinkedInFormatterLanding() {
   return (
     <div className="container mx-auto px-4 py-10">

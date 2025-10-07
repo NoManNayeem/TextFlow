@@ -237,20 +237,44 @@ export default function FormatterPage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-4">
                 <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 <span className="text-sm font-medium text-blue-700 dark:text-blue-300">
-                  Professional Text Formatting
+                  100% Free • No Sign‑up • Privacy First
                 </span>
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-gradient-blue">
-                Format Your Social Media Posts
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
+                <span className="bg-gradient-to-r from-[var(--primary)] via-[var(--muted-foreground)] to-[var(--ring)] bg-clip-text text-transparent">
+                  Transform Your Words
+                </span>
+                <br />
+                <span className="text-foreground">Amplify Your Voice</span>
               </h1>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
-                Select any text and apply professional formatting. Works exactly like the real platform!
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-5">
+                Create scroll‑stopping LinkedIn & Facebook posts with professional text formatting.
               </p>
+              <div className="flex items-center justify-center gap-3">
+                <Button
+                  onClick={() => textareaRef.current?.focus()}
+                  className="px-5"
+                >
+                  Start Formatting — It’s Free
+                </Button>
+                <Button
+                  variant="outline"
+                  className="gap-2"
+                  asChild
+                >
+                  <a href="https://github.com/NoManNayeem" target="_blank" rel="noopener noreferrer">
+                    Star on GitHub
+                  </a>
+                </Button>
+              </div>
+              <div className="mt-4 text-xs text-muted-foreground">
+                ✓ Works Everywhere ✓ Unicode‑safe ✓ No Tracking
+              </div>
               <Button
                 variant="ghost"
                 size="sm"
                 onClick={() => setHeroCollapsed(true)}
-                className="flex items-center gap-2 interactive hover-glow"
+                className="mt-4 flex items-center gap-2 interactive hover-glow"
               >
                 <ChevronUp className="w-4 h-4" />
                 Hide Info

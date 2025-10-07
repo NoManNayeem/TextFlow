@@ -1,5 +1,7 @@
-'use client';
-
+export const metadata = {
+  title: 'Terms of Service | TextFlow',
+  description: 'Free usage terms, acceptable use policy, and unicode compatibility disclaimer for TextFlow.',
+};
 export default function TermsPage() {
   return (
     <div className="container mx-auto px-4 py-10">

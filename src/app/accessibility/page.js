@@ -1,5 +1,7 @@
-'use client';
-
+export const metadata = {
+  title: 'Accessibility | TextFlow',
+  description: 'WCAG 2.1 AA intent, screen reader support, keyboard navigation, and contact for accessibility issues.',
+};
 export default function AccessibilityPage() {
   return (
     <div className="container mx-auto px-4 py-10">

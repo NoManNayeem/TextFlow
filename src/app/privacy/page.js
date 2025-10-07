@@ -1,5 +1,7 @@
-'use client';
-
+export const metadata = {
+  title: 'Privacy Policy | TextFlow',
+  description: 'Privacy-first: no sign-up, no tracking, and no text stored. Learn how TextFlow protects your data.',
+};
 export default function PrivacyPage() {
   return (
     <div className="container mx-auto px-4 py-10">

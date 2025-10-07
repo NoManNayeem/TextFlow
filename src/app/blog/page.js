@@ -1,5 +1,7 @@
-'use client';
-
+export const metadata = {
+  title: 'Blog & Resources | TextFlow',
+  description: 'SEO-focused articles and guides on formatting, accessibility, and platform best practices.',
+};
 import Link from 'next/link';
 
 const posts = [

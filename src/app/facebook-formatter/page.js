@@ -1,5 +1,7 @@
-'use client';
-
+export const metadata = {
+  title: 'Facebook Text Formatter | TextFlow',
+  description: 'Readable emphasis and unicode styles for Facebook posts. Long‑form examples and mobile‑first tips.',
+};
 export default function FacebookFormatterLanding() {
   return (
     <div className="container mx-auto px-4 py-10">

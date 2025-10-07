@@ -1,5 +1,7 @@
-'use client';
-
+export const metadata = {
+  title: 'Updates & Changelog | TextFlow',
+  description: 'Transparent changelog of new features, fixes, and roadmap highlights for TextFlow.',
+};
 const updates = [
   { date: '2025-10-07', title: 'Branding & SEO', notes: ['Enhanced metadata', 'New logo & favicon', 'Added Templates, FAQ, Compare, Updates pages'] },
   { date: '2025-10-06', title: 'Editor UX', notes: ['Integrated platform-specific editors', 'Auto-resize textarea', 'Toolbar improvements'] },

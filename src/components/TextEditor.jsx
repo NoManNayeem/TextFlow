@@ -195,11 +195,11 @@ const LinkedInEditor = forwardRef(({ text, onChange, onSelect, stats, platform, 
         <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-600">
           <div className="flex items-start gap-2 text-xs">
             <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-semibold text-xs">
-              S
+              N
             </div>
             <div className="flex-1">
-              <div className="font-medium text-gray-900 dark:text-white">Sarah Johnson</div>
-              <div className="text-gray-600 dark:text-gray-400">Great insights! This is exactly what I needed to know. 👍</div>
+              <div className="font-medium text-gray-900 dark:text-white">Nayeem Islam</div>
+              <div className="text-gray-600 dark:text-gray-400">Sample preview comment to demonstrate layout only.</div>
             </div>
           </div>
         </div>
@@ -382,11 +382,11 @@ const FacebookEditor = forwardRef(({ text, onChange, onSelect, stats, platform, 
         <div className="mt-2 pt-2 border-t border-gray-200 dark:border-[#3E4042]">
           <div className="flex items-start gap-2 text-xs">
             <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-semibold text-xs">
-              M
+              N
             </div>
             <div className="flex-1">
-              <div className="font-medium text-gray-900 dark:text-[#E4E6EB]">Mike Chen</div>
-              <div className="text-gray-600 dark:text-[#B0B3B8]">This is so true! Thanks for sharing 😊</div>
+              <div className="font-medium text-gray-900 dark:text-[#E4E6EB]">Nayeem Islam</div>
+              <div className="text-gray-600 dark:text-[#B0B3B8]">Sample preview comment to demonstrate layout only.</div>
             </div>
           </div>
         </div>
@@ -499,11 +499,11 @@ const GenericEditor = forwardRef(({ text, onChange, onSelect, stats, platform, o
         <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-600">
           <div className="flex items-start gap-2 text-xs">
             <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-semibold text-xs">
-              A
+              N
             </div>
             <div className="flex-1">
-              <div className="font-medium text-gray-900 dark:text-white">Alex Rodriguez</div>
-              <div className="text-gray-600 dark:text-gray-400">Excellent content! Very well written and informative. 💡</div>
+              <div className="font-medium text-gray-900 dark:text-white">Nayeem Islam</div>
+              <div className="text-gray-600 dark:text-gray-400">Sample preview comment to demonstrate layout only.</div>
             </div>
           </div>
         </div>

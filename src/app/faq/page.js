@@ -1,5 +1,7 @@
-'use client';
-
+export const metadata = {
+  title: 'FAQ | TextFlow',
+  description: 'Answers to common questions about TextFlow usage, compatibility, and privacy.',
+};
 const faqs = [
   {
     category: 'General',
