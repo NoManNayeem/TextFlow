@@ -34,12 +34,12 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto px-4 py-10 animate-fade-in">
       <h1 className="text-3xl font-bold mb-6">Resources & Articles</h1>
       <p className="text-muted-foreground mb-8">SEO‑focused guides to help you write better posts and get more engagement.</p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((p) => (
-          <Link key={p.slug} href={`/blog/${p.slug}`} className="rounded-xl border bg-card p-5 shadow-sm hover:shadow-md transition-shadow">
+          <Link key={p.slug} href={`/blog/${p.slug}`} className="rounded-xl border bg-card p-5 shadow-sm hover:shadow-md transition-shadow animate-slide-up focus-ring">
             <h2 className="text-xl font-semibold mb-2">{p.title}</h2>
             <p className="text-sm text-muted-foreground">{p.excerpt}</p>
           </Link>

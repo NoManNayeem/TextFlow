@@ -21,6 +21,13 @@ Transform your social media posts with beautiful text formatting using Unicode c
 - **Generic Editor**: Clean, general-purpose text editor
 
 ### ⚡ User Experience
+
+[![TextFlow](https://img.shields.io/badge/TextFlow-Transform%20Your%20Words%2C%20Amplify%20Your%20Voice-blueviolet?style=for-the-badge)](https://text-flow-two.vercel.app)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/NoManNayeem/TextFlow/pulls)
+
+TextFlow is 100% Free • No Sign‑up • Privacy‑First. Transform plain text into beautifully formatted posts for LinkedIn and social media.
 - **Real-time preview**: See exactly how your post will look on each platform
 - **Character counters**: Live character, word, and sentence counts with platform limits
 - **Keyboard shortcuts**: Ctrl+B (Bold), Ctrl+I (Italic), Ctrl+U (Underline)
