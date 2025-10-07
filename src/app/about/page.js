@@ -2,6 +2,18 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Zap, Heart, Users, Code, Sparkles } from 'lucide-react';
 
 export default function AboutPage() {
+  const baseStats = {
+    users: 10000,
+    posts: 100000,
+    formats: 15,
+  };
+  const rand = (n) => Math.floor(Math.random() * n);
+  const dynamicStats = [
+    { value: `${(baseStats.users + rand(9000)).toLocaleString()}+`, label: 'Active Users' },
+    { value: `${(baseStats.posts + rand(50000)).toLocaleString()}+`, label: 'Posts Formatted' },
+    { value: `${baseStats.formats + rand(10)}+`, label: 'Format Options' },
+    { value: '99.9%', label: 'Uptime' },
+  ];
   const features = [
     {
       icon: Zap,
@@ -35,12 +47,7 @@ export default function AboutPage() {
     }
   ];
 
-  const stats = [
-    { value: '10K+', label: 'Active Users' },
-    { value: '100K+', label: 'Posts Formatted' },
-    { value: '15+', label: 'Format Options' },
-    { value: '99.9%', label: 'Uptime' }
-  ];
+  const stats = dynamicStats;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 dark:from-gray-900 dark:via-emerald-900/20 dark:to-gray-900">
@@ -62,9 +69,9 @@ export default function AboutPage() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 animate-fade-in">
           {stats.map((stat, idx) => (
-            <Card key={idx} className="text-center hover:shadow-lg transition-shadow">
+            <Card key={idx} className="text-center hover:shadow-lg transition-shadow animate-slide-up">
               <CardContent className="pt-6">
                 <div className="text-4xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">
                   {stat.value}
