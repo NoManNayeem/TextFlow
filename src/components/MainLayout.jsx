@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Toaster } from 'sonner';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -27,6 +28,7 @@ export default function MainLayout({ children }) {
       <Navbar theme={theme} setTheme={setTheme} />
       <main className="flex-1">{children}</main>
       <Footer />
+      <Toaster position="top-right" richColors />
     </div>
   );
 }

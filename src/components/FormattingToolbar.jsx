@@ -44,9 +44,9 @@ export default function FormattingToolbar({ onFormat }) {
   ];
 
   return (
-    <div className="border border-border rounded-lg p-2 bg-background/50 backdrop-blur-sm">
+    <div className="w-full border border-border rounded-lg p-2 bg-background/50 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300 hover-lift overflow-x-auto">
       <TooltipProvider delayDuration={300}>
-        <div className="flex items-center gap-1 flex-wrap">
+        <div className="flex items-center gap-1 flex-wrap justify-between md:justify-start">
           {toolGroups.map((group, groupIdx) => (
             <div key={groupIdx} className="flex items-center gap-1">
               {group.tools.map((tool, toolIdx) => (
@@ -55,7 +55,7 @@ export default function FormattingToolbar({ onFormat }) {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-9 w-9 hover:bg-secondary"
+                      className="h-9 w-9 hover:bg-secondary hover:scale-105 active:scale-95 transition-all duration-200 interactive hover-glow focus-ring"
                       onClick={() => onFormat(tool.action)}
                     >
                       {tool.label ? (

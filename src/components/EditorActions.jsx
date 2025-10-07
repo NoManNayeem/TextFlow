@@ -9,6 +9,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { toast } from 'sonner';
 
 export default function EditorActions({ text, onReset }) {
   const [copied, setCopied] = useState(false);
@@ -17,6 +18,10 @@ export default function EditorActions({ text, onReset }) {
     if (text) {
       await navigator.clipboard.writeText(text);
       setCopied(true);
+      toast.success('Copied to clipboard!', {
+        description: 'Your formatted text is ready to paste',
+        duration: 3000,
+      });
       setTimeout(() => setCopied(false), 2000);
     }
   };
@@ -32,6 +37,10 @@ export default function EditorActions({ text, onReset }) {
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
+      toast.success('Downloaded successfully!', {
+        description: 'Check your downloads folder',
+        duration: 3000,
+      });
     }
   };
 

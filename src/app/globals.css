@@ -116,5 +116,99 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Typography Scale */
+  .text-xs { font-size: 0.75rem; line-height: 1rem; }
+  .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+  .text-base { font-size: 1rem; line-height: 1.5rem; }
+  .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+  .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+  .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+  .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+  .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+  .text-5xl { font-size: 3rem; line-height: 1; }
+
+  /* Font Weights */
+  .font-normal { font-weight: 400; }
+  .font-medium { font-weight: 500; }
+  .font-semibold { font-weight: 600; }
+  .font-bold { font-weight: 700; }
+
+  /* Line Heights */
+  .leading-tight { line-height: 1.25; }
+  .leading-snug { line-height: 1.375; }
+  .leading-normal { line-height: 1.5; }
+  .leading-relaxed { line-height: 1.625; }
+  .leading-loose { line-height: 2; }
+
+  /* Letter Spacing */
+  .tracking-tighter { letter-spacing: -0.05em; }
+  .tracking-tight { letter-spacing: -0.025em; }
+  .tracking-normal { letter-spacing: 0em; }
+  .tracking-wide { letter-spacing: 0.025em; }
+  .tracking-wider { letter-spacing: 0.05em; }
+  .tracking-widest { letter-spacing: 0.1em; }
+
+  /* Headings */
+  h1, .h1 {
+    @apply text-4xl font-bold leading-tight tracking-tight;
+  }
+  h2, .h2 {
+    @apply text-3xl font-bold leading-tight tracking-tight;
+  }
+  h3, .h3 {
+    @apply text-2xl font-semibold leading-snug tracking-tight;
+  }
+  h4, .h4 {
+    @apply text-xl font-semibold leading-snug tracking-tight;
+  }
+  h5, .h5 {
+    @apply text-lg font-medium leading-snug tracking-tight;
+  }
+  h6, .h6 {
+    @apply text-base font-medium leading-snug tracking-tight;
+  }
+
+  /* Body Text */
+  .body-large {
+    @apply text-lg leading-relaxed;
+  }
+  .body {
+    @apply text-base leading-relaxed;
+  }
+  .body-small {
+    @apply text-sm leading-relaxed;
+  }
+
+  /* Caption and Labels */
+  .caption {
+    @apply text-xs leading-normal text-muted-foreground;
+  }
+  .label {
+    @apply text-sm font-medium leading-none;
+  }
+
+  /* Code */
+  code, .code {
+    @apply font-mono text-sm bg-muted px-1.5 py-0.5 rounded;
+  }
+  pre, .pre {
+    @apply font-mono text-sm bg-muted p-4 rounded-lg overflow-x-auto;
+  }
+
+  /* Links */
+  a {
+    @apply text-primary hover:text-primary/80 transition-colors duration-200;
+  }
+
+  /* Lists */
+  ul, ol {
+    @apply space-y-1;
+  }
+  li {
+    @apply leading-relaxed;
   }
 }
