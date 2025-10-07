@@ -35,7 +35,7 @@ const LinkedInEditor = forwardRef(({ text, onChange, onSelect, stats, platform, 
       {/* Header */}
       <div className="p-4 flex items-start gap-3">
         {/* Profile Picture */}
-        <div className="relative w-12 h-12 shrink-0">
+        <a href="/developer" className="relative w-12 h-12 shrink-0" aria-label="Go to developer page">
           <Image
             src="https://avatars.githubusercontent.com/u/60138887?v=4"
             alt="Profile avatar"
@@ -44,12 +44,12 @@ const LinkedInEditor = forwardRef(({ text, onChange, onSelect, stats, platform, 
             className="rounded-full object-cover border border-border"
             priority
           />
-        </div>
+        </a>
         
         <div className="flex-1">
           {/* User Info */}
           <div className="mb-2">
-            <div className="font-semibold text-sm text-gray-900 dark:text-white">Nayeem Islam</div>
+            <a href="/developer" className="font-semibold text-sm text-gray-900 dark:text-white hover:underline">Nayeem Islam</a>
             <div className="flex items-center gap-1 text-xs text-gray-600 dark:text-gray-400">
               <Globe className="w-3 h-3" />
               <span>Anyone</span>
@@ -219,7 +219,7 @@ const FacebookEditor = forwardRef(({ text, onChange, onSelect, stats, platform, 
       {/* Header */}
       <div className="p-4 pb-3 flex items-center gap-3">
         {/* Profile Picture */}
-        <div className="relative w-10 h-10 shrink-0">
+        <a href="/developer" className="relative w-10 h-10 shrink-0" aria-label="Go to developer page">
           <Image
             src="https://avatars.githubusercontent.com/u/60138887?v=4"
             alt="Profile avatar"
@@ -228,10 +228,10 @@ const FacebookEditor = forwardRef(({ text, onChange, onSelect, stats, platform, 
             className="rounded-full object-cover border border-border"
             priority
           />
-        </div>
+        </a>
         
         <div className="flex-1">
-          <div className="font-semibold text-sm text-gray-900 dark:text-[#E4E6EB]">Nayeem Islam</div>
+          <a href="/developer" className="font-semibold text-sm text-gray-900 dark:text-[#E4E6EB] hover:underline">Nayeem Islam</a>
           <Button variant="ghost" size="sm" className="h-auto p-0 text-xs text-gray-600 dark:text-[#B0B3B8] hover:bg-transparent">
             <Globe className="w-3 h-3 mr-1" />
             Public

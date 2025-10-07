@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Moon, Sun, Menu, X, Home, BookOpen, Info, Sparkles } from 'lucide-react';
+import { Moon, Sun, Menu, X, Home, BookOpen, Info, Sparkles, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Tooltip,
@@ -30,6 +30,7 @@ export default function Navbar({ theme, setTheme }) {
     { name: 'Home', href: '/', icon: Home, description: 'Text formatter' },
     { name: 'Tutorial', href: '/tutorial', icon: BookOpen, description: 'Learn how to use' },
     { name: 'About', href: '/about', icon: Info, description: 'About TextFlow' },
+    { name: 'Developer', href: '/developer', icon: User, description: 'About the developer' },
   ];
 
   const toggleTheme = () => {
